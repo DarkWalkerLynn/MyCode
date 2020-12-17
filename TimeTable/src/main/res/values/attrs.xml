@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="bg" format="color|reference" ></attr>
+    <attr name="redText" format="color|reference"></attr>
+    <attr name="tittleText" format="color|reference"></attr>
+    <attr name="title_layout" format="color|reference"></attr>
+    <attr name="no_data" format="color|reference"></attr>
+    <attr name="primary_text" format="color|reference"></attr>
+    <attr name="second_text" format="color|reference"></attr>
+    <attr name="second_bg" format="color|reference"></attr>
+
+    <!-- 可清空编辑框属性 -->
+    <declare-styleable name="EditTextWithDelete">
+        <attr name="delSrc" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="DottedLine">
+        <attr name="dotColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="EditTextWithEye">
+        <attr name="eyeSrc_show" format="reference"/>
+        <attr name="eyeSrc_hide" format="reference"/>
+    </declare-styleable>
+</resources>

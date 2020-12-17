@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TimeTable</string>
+
+    <string name="profilePicture">头像：</string>
+    <string name="account">账号*：</string>
+    <string name="accountHint"><font size="13">只能包含a-z、A-Z、数字及下划线</font></string>
+    <string name="setPassword">设置密码*：</string>
+    <string name="setPasswordHint"><font size="13">请输入密码</font></string>
+    <string name="confirmPassword">确认密码*：</string>
+    <string name="confirmPasswordHint"><font size="13">再次输入密码以确认</font></string>
+    <string name="phoneNumber">手机号*：</string>
+    <string name="sex">性别：</string>
+    <string name="userName">用户名：</string>
+    <string name="userNameHint"><font size="13">请输入用户名</font></string>
+    <string name="serviceAgreement">《服务协议》</string>
+    <string name="privacyPolicy">《隐私政策》</string>
+</resources>

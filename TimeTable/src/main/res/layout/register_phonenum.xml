@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/enter_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:text="输入手机号码"
+        android:textColor="@color/text1"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/register_phonenum_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enter_text">
+        <!--自定义元件-->
+        <com.example.timetable.control.EditTextWithDelete
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入手机号"
+            app:delSrc="@drawable/delete_et" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入验证码"/>
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="发送验证码"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我已阅读并同意"/>
+            <!--服务协议-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/serviceAgreement"
+                android:textColor="@color/optionalText"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="和"/>
+            <!--隐私政策-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/privacyPolicy"
+                android:textColor="@color/optionalText"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_phonenum_et" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

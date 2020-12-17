@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/register_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:gravity="end"
+                    android:text="@string/profilePicture"
+                    android:textSize="15dp" />
+                <ImageView
+                    android:id="@+id/register_profilePicture"
+                    android:layout_width="280dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/profile_picture"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_gravity="end" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="end"
+                    android:text="@string/account"
+                    android:textSize="15dp" />
+
+                <com.example.timetable.control.EditTextWithDelete
+                    android:id="@+id/user_id"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/accountHint"
+                    app:delSrc="@drawable/delete_et" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_gravity="end" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="end"
+                    android:text="@string/userName"
+                    android:textSize="15dp" />
+
+                <com.example.timetable.control.EditTextWithDelete
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/userNameHint"
+                    app:delSrc="@drawable/delete_et" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_gravity="end" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="end"
+                    android:text="@string/setPassword"
+                    android:textSize="15dp" />
+
+                <com.example.timetable.control.EditTextWithEye
+                    android:id="@+id/register_setPassword"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="@string/setPasswordHint"
+                    app:eyeSrc_show="@drawable/show_et"
+                    app:eyeSrc_hide="@drawable/hide_et" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_gravity="end" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="end"
+                    android:text="@string/confirmPassword"
+                    android:textSize="15dp" />
+
+                <com.example.timetable.control.EditTextWithEye
+                    android:id="@+id/register_confirmPassword"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="@string/confirmPasswordHint"
+                    app:eyeSrc_hide="@drawable/hide_et"
+                    app:eyeSrc_show="@drawable/show_et"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_gravity="end" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="end"
+                    android:text="@string/sex"
+                    android:textSize="15dp" />
+
+                <RadioGroup
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="男"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="女"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_gravity="end" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:text="注 册"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_et" />
+</androidx.constraintlayout.widget.ConstraintLayout>
